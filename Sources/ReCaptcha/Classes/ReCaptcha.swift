@@ -38,7 +38,7 @@ public class ReCaptcha {
     /// The Bundle that holds ReCaptcha's assets
   private static let bundle: Bundle = {
     let bundle = Bundle(for: ReCaptcha.self)
-    print(bundle.bundlePath)
+    print(bundle.path(forResource: "recaptcha", ofType: "html"))
     return bundle
   }()
 
